@@ -171,9 +171,10 @@ Arduino GND ↔ L298N GND *(Common Ground)*
 
 # 📸 Project Images
 
-README.md
-Test4.jpg
-![Smart Car](Test4.jpg)
+<p align="center">
+  <img src="Test4.jpg" width="300">
+  <img src="Working.jpg" width="300">
+</p>
 
 Example:
 
