@@ -176,11 +176,9 @@ Arduino GND ↔ L298N GND *(Common Ground)*
 Example:
 
 ```
-Images/
-├── Car_Front.jpg
-├── Car_Back.jpg
-├── Circuit.jpg
-└── Working.jpg
+<p align="center">
+  <img src="images/Working.jpg" width="650">
+</p>
 ```
 
 ---
@@ -190,7 +188,7 @@ Images/
 You can upload a demonstration video to YouTube and add the link here.
 
 ```
-https://youtu.be/YourVideoLink
+https://youtu.be/V0CKi89dTcM?si=jzslW7gQ86eiZz-v
 ```
 
 ---
@@ -208,7 +206,7 @@ This project is licensed under the **MIT License**.
 - BICT Undergraduate – University of Vavuniya
 - HND in Electrical Engineering – CINEC Campus
 
-**GitHub:** https://github.com/YourUsername
+**GitHub:** https://github.com/SadilNLogs
 
 **LinkedIn:** https://linkedin.com/in/YourLinkedInProfile
 
