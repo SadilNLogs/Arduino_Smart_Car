@@ -1,0 +1,153 @@
+/*
+----------------------------------------------------
+Project : Bluetooth Controlled 4WD Smart Car
+Board   : Arduino Uno
+Motor Driver : L298N
+Bluetooth : HC-05
+Author : Sadil Nethwan
+----------------------------------------------------
+Commands
+
+F = Forward
+B = Backward
+L = Left
+R = Right
+S = Stop
+
+----------------------------------------------------
+Pin Connections
+
+HC-05
+------
+VCC -> 5V
+GND -> GND
+TX  -> D0 (RX)
+RX  -> D1 (TX)
+
+L298N
+------
+ENA -> D4
+IN1 -> D5
+IN2 -> D6
+IN3 -> D7
+IN4 -> D8
+ENB -> D9
+
+----------------------------------------------------
+*/
+
+// Motor A
+#define ENA 4
+#define IN1 5
+#define IN2 6
+
+// Motor B
+#define IN3 7
+#define IN4 8
+#define ENB 9
+
+char command;
+
+void setup()
+{
+  pinMode(ENA, OUTPUT);
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+
+  pinMode(ENB, OUTPUT);
+  pinMode(IN3, OUTPUT);
+  pinMode(IN4, OUTPUT);
+
+  digitalWrite(ENA, HIGH);
+  digitalWrite(ENB, HIGH);
+
+  Serial.begin(9600);
+
+  stopCar();
+}
+
+void loop()
+{
+  if (Serial.available() > 0)
+  {
+    command = Serial.read();
+
+    switch(command)
+    {
+      case 'F':
+        moveForward();
+        break;
+
+      case 'B':
+        moveBackward();
+        break;
+
+      case 'L':
+        turnLeft();
+        break;
+
+      case 'R':
+        turnRight();
+        break;
+
+      case 'S':
+        stopCar();
+        break;
+    }
+  }
+}
+
+//==============================
+
+void moveForward()
+{
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
+
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN4, LOW);
+}
+
+//==============================
+
+void moveBackward()
+{
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, HIGH);
+
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, HIGH);
+}
+
+//==============================
+
+void turnLeft()
+{
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, HIGH);
+
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN4, LOW);
+}
+
+//==============================
+
+void turnRight()
+{
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
+
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, HIGH);
+}
+
+//==============================
+
+void stopCar()
+{
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, LOW);
+
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, LOW);
+}
