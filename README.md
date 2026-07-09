@@ -172,15 +172,12 @@ Arduino GND ↔ L298N GND *(Common Ground)*
 # 📸 Project Images
 
 <p align="center">
+  <img src="Components.jpg" width="300">
   <img src="Test4.jpg" width="300">
   <img src="Working.jpg" width="300">
+  <img src="Test2.jpg" width="300">
 </p>
 
-Example:
-
-```
-![Project Image](images/Working.jpg.jpg)
-```
 
 ---
 
