@@ -32,7 +32,7 @@ This project demonstrates practical knowledge in **embedded systems**, **robotic
 | DC Geared Motors | 4 |
 | 4WD Robot Chassis | 1 |
 | Wheels | 4 |
-| Battery Pack (7.4V–12V) | 1 |
+| Battery Pack (12V) | 1 |
 | Power Switch | 1 |
 | Jumper Wires | Several |
 
@@ -63,7 +63,7 @@ This project demonstrates practical knowledge in **embedded systems**, **robotic
 | ENB | D9 |
 | GND | Arduino GND |
 | 5V | Arduino VIN/5V *(depending on power configuration)* |
-| +12V | Battery Positive |
+| +7V | Battery Positive |
 
 ---
 
@@ -166,29 +166,6 @@ Arduino GND ↔ L298N GND *(Common Ground)*
 - Live Camera Streaming
 - GPS Navigation
 - Mobile Application Development
-
----
-
-# 📁 Project Structure
-
-```
-Arduino-Bluetooth-Controlled-4WD-Car/
-│
-├── Arduino_Code/
-│   └── Bluetooth_Car.ino
-│
-├── Circuit_Diagram/
-│   └── Wiring_Diagram.png
-│
-├── Images/
-│   ├── Car_Front.jpg
-│   ├── Car_Side.jpg
-│   └── Working.jpg
-│
-├── README.md
-│
-└── LICENSE
-```
 
 ---
 
