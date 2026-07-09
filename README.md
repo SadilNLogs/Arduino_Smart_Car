@@ -176,9 +176,7 @@ Arduino GND ↔ L298N GND *(Common Ground)*
 Example:
 
 ```
-<p align="center">
-  <img src="images/Working.jpg" width="650">
-</p>
+![Project Image](images/Working.jpg.jpg)
 ```
 
 ---
@@ -208,7 +206,7 @@ This project is licensed under the **MIT License**.
 
 **GitHub:** https://github.com/SadilNLogs
 
-**LinkedIn:** https://linkedin.com/in/YourLinkedInProfile
+**LinkedIn:** https://www.linkedin.com/in/sadil-nethwan-002489284?utm_source=share_via&utm_content=profile&utm_medium=member_android
 
 ⭐ If you found this project useful, please consider giving it a **Star** on GitHub!
 
