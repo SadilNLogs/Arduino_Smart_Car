@@ -171,7 +171,7 @@ Arduino GND ↔ L298N GND *(Common Ground)*
 
 # 📸 Project Images
 
-> Add photos of your robot here.
+![Project Image](images/Working.jpg.jpg)
 
 Example:
 
