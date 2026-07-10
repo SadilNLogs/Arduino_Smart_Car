@@ -183,8 +183,6 @@ Arduino GND ↔ L298N GND *(Common Ground)*
 
 # 🎥 Demo Video
 
-You can upload a demonstration video to YouTube and add the link here.
-
 ```
 https://youtu.be/V0CKi89dTcM?si=jzslW7gQ86eiZz-v
 ```
