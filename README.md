@@ -63,7 +63,7 @@ This project demonstrates practical knowledge in **embedded systems**, **robotic
 | ENB | D9 |
 | GND | Arduino GND |
 | 5V | Arduino VIN/5V *(depending on power configuration)* |
-| +7V | Battery Positive |
+| +12V | Battery Positive |
 
 ---
 
